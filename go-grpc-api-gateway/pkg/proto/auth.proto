@@ -1,0 +1,12 @@
+syntax = "proto3"
+
+package proto;
+
+option go_package= "./pkg/pb"
+
+service AuthService{
+    rpc  Register (RegisterRequest) returns (RegisterResponse){}
+    rpc  RegisterOtpVerify (RegisterRequest) returns (RegisterResponse){}
+    rpc  Login (RegisterRequest) returns (RegisterResponse){}
+
+}
