@@ -5,8 +5,16 @@ package proto;
 option go_package= "./pkg/pb"
 
 service AuthService{
-    rpc  Register (RegisterRequest) returns (RegisterResponse){}
+    rpc  UserRegister (RegisterRequest) returns (RegisterResponse){}
     rpc  RegisterOtpVerify (RegisterRequest) returns (RegisterResponse){}
     rpc  Login (RegisterRequest) returns (RegisterResponse){}
 
+}
+
+message RegisterRequest{
+
+}
+
+message RegisterResponse{
+    
 }
